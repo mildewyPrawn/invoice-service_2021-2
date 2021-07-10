@@ -35,7 +35,7 @@ public class Invoice {
     @Column(name = "customer_code")
     @NotNull(message="customer code is required")
     @Min(value=1, message="customer code must be greater than 0")
-    private Integer customerCode;
+    private String customerCode;
 	
     @JsonProperty("subtotal")
     @Transient

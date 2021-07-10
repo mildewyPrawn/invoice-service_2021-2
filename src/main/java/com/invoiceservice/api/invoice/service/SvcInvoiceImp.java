@@ -78,7 +78,7 @@ public class SvcInvoiceImp implements SvcInvoice {
         }
     }
 	
-    private DtoCustomer getCustomer(Integer customerCode) {
+    private DtoCustomer getCustomer(String customerCode) {
         try {
             ResponseEntity<DtoCustomer> response = restTemplate.getForEntity(
                                                                              "http://localhost:8080/customer/" + customerCode, 
