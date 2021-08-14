@@ -35,7 +35,7 @@ public class InvoiceItem {
     @JsonProperty("quantity")
     @Column(name = "quantity")
     @NotNull(message="quantity is required")
-    @Min(value=1, message="quantity must be greater than 0")
+    @Min(value=1, message="quantity must be greater than 0 uwu")
     private Integer quantity;
 	
     @JsonProperty("tax_percentage")
